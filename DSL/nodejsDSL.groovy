@@ -14,6 +14,7 @@ job('Aplicacion Node.js DSL') {
     }
     steps {
         shell("npm install")
+		shell("libatomic1 install")
     }
     publishers {
 	slackNotifier {
